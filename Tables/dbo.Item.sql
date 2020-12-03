@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Item]
+(
+[ItemId] [int] NOT NULL IDENTITY(1, 1),
+[ItemName] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Item] ADD CONSTRAINT [PK_Item] PRIMARY KEY CLUSTERED  ([ItemId]) ON [PRIMARY]
+GO
